@@ -21,7 +21,7 @@ Newsletter::subscribe('rincewind@discworld.com');
 Newsletter::unsubscribe('the.luggage@discworld.com');
 
 //Merge variables can be passed as the second argument
-Newsletter::subscribe('sam.vines@discworld.com', ['firstName'=>'Sam', 'lastName'=>'Vines']);
+Newsletter::subscribe('sam.vimes@discworld.com', ['firstName'=>'Sam', 'lastName'=>'Vimes']);
 
 //Subscribe someone to a specific list by using the third argument:
 Newsletter::subscribe('nanny.ogg@discworld.com', ['firstName'=>'Nanny', 'lastName'=>'Ogg'], 'Name of your list');
@@ -30,7 +30,7 @@ Newsletter::subscribe('nanny.ogg@discworld.com', ['firstName'=>'Nanny', 'lastNam
 Newsletter::subscribePending('nanny.ogg@discworld.com', ['firstName'=>'Nanny', 'lastName'=>'Ogg'], 'Name of your list');
 
 //Subscribe or update someone
-Newsletter::subscribeOrUpdate('sam.vines@discworld.com', ['firstName'=>'Foo', 'lastName'=>'Bar']);
+Newsletter::subscribeOrUpdate('sam.vimes@discworld.com', ['firstName'=>'Foo', 'lastName'=>'Bar']);
 
 // Change the email address of an existing subscriber
 Newsletter::updateEmailAddress('rincewind@discworld.com', 'the.luggage@discworld.com');
